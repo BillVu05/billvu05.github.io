@@ -429,8 +429,11 @@ body .d2c_mobile_view {
     padding-left: 20px;
 }
 .d2c_service_wrapper li::marker {
-    color: var(--primary_color) !important;
+    color: var(--secondary_color) !important;
     font-size: 18px;
+}
+.d2c_service_wrapper .d2c_card_wrapper:hover li::marker {
+    color: var(--primary_text_color) !important;
 }
 .d2c_service_wrapper .d2c_card_wrapper {
     background: #FFFFFF;
@@ -484,6 +487,20 @@ body .d2c_mobile_view {
 .d2c_service_wrapper .d2c_card_wrapper:hover p {
     color: var(--primary_text_color);
     transition: 0.4s all;
+}
+.d2c_service_wrapper .d2c_card_wrapper ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.d2c_service_wrapper .d2c_card_wrapper li {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--primary_text_shade);
+    transition: 0.4s all;
+}
+.d2c_service_wrapper .d2c_card_wrapper:hover li {
+    color: var(--primary_text_color);
 }
 .d2c_service_card:after {
     content: url(../images/service_circle.jpg);
