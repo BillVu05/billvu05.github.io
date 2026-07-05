@@ -1,80 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- default meta title -->
+    <!-- Deafult Meta Tag -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- OG Meta Tag -->
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Tien Dung Vu - AI Engineer">
     <meta name="description" content="Portfolio of Tien Dung Vu, an AI Engineer who loves building machine learning, NLP, computer vision, and LLM agentic systems that solve real problems.">
     <meta property="og:description" content="Portfolio of Tien Dung Vu, an AI Engineer who loves building machine learning, NLP, computer vision, and LLM agentic systems that solve real problems.">
-    <!-- title -->
+    <!-- Title -->
     <title>Tien Dung Vu - AI Engineer</title>
-    <!-- favicon -->
+    <!-- Favicon -->
     <link rel="icon" id="favicon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- font awesome 5 cdn/ icon link -->
+    <!-- Animate CSS Link -->
+    <link rel="stylesheet" href="./lib/WOW-master/css/libs/animate.css">
+    <!-- Font CDN Link -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000" rel="stylesheet">
+    <!-- Font Awesome 5 CDN/ Icon Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- bootstrap css -->
+    <!-- Slider CSS Link -->
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css">
+    <!-- Bootstarp CSS -->
     <link rel="stylesheet" href="./lib/bootstrap-5/css/bootstrap.min.css">
-    <!-- main css -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- responsive css -->
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-    <!--  preloader start  -->
+    <!--  Preloader Start  -->
     <div class="preloader">
-        <img src="./assets/images/logo.png" alt="Preloader Logo">
+        <img src="./assets/images/logo-mark.png" alt="Tien Dung Vu logo">
     </div>
-    <!--  preloader end  -->
+    <!--  Preloader End  -->
 
-    <!-- header start -->
+    <!-- Header Start -->
     <header class="d2c_navbar sticky-top">
         <div class="container">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg px-0 py-0" id="d2c_main_nav">
-                <!-- logo -->
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/images/logo-mark.png" alt="Tien Dung Vu logo" class="d2c_brand_logo">
-                </a>
-                <!-- logo -->
-                <!-- hamburger -->
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg px-0" id="d2c_main_nav">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo-mark.png" class="w-100" alt="Tien Dung Vu logo"></a>
+                <!-- Logo -->
+
+                <!-- HamBurger -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fas fa-bars"></i></span>
                 </button>
-                <!-- hamburger -->
-                <!-- nav item -->
+                <!-- HamBurger -->
+
+                <!-- Nav Item -->
                 <div class="collapse navbar-collapse js-clone-nav justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experience">experience</a>
+                            <a class="nav-link" href="#services">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">skills</a>
+                            <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects</a>
+                            <a class="nav-link" href="#project">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="btn d-block d-lg-none">Get In touch</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <a href="#contact" class="btn d-none d-lg-block">Get In touch</a>
-                <!-- nav item -->
+                <!-- Nav Item -->
             </nav>
-            <!-- navbar -->
-            <!-- tab and mobile view -->
+            <!-- Navbar -->
+
+            <!-- Tab And Mobile View -->
             <div class="collapse navbar-collapse d2c_mobile_view" id="navbarSupportedContent">
                 <div class="show_width container">
                     <div class="text-right">
@@ -86,203 +92,470 @@
                     <div class="navbar px-0 d2c_mobile_view_body"></div>
                 </div>
             </div>
-            <!-- tab and mobile view -->
+            <!-- Tab And Mobile View -->
         </div>
     </header>
-    <!-- header end -->
+    <!-- Header End -->
 
     <main data-bs-spy="scroll" data-bs-target="#d2c_main_nav" class="position-relative">
-        <div class="d2c_hero_bg">
-
-            <!-- hero start -->
-            <section class="d2c_hero_wrapper" id="home">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 pe-5 order-last order-lg-first">
-                            <h1>Hi, I'm <span>Tien Dung Vu</span></h1>
-                            <p>An AI Engineer in Sydney who designs and builds intelligent systems from the ground up. I train machine learning models that learn from data, build computer vision pipelines that interpret the visual world, engineer NLP systems that understand language at scale, and architect LLM agents that reason, plan, and act autonomously. From raw data to deployed product, I own the full stack of intelligence.</p>
-                            <a href="#projects" class="btn">View My Work</a>
-                        </div>
-                        <div class="col-lg-6 order-first order-lg-first mb-4 mb-lg-0">
-                            <div class="d2c_vector_img_wrapper">
-                                <div class="d2c_shade_bg">
-                                    <img src="./assets/images/hero.png" class="img-fluid" alt="Tien Dung Vu">
-                                </div>
-                            </div>
+        <!-- Hero Section Start -->
+        <section class="d2c_hero_wrapper" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-md col-lg-6 order-1 order-lg-0 wow fadeInLeft">
+                        <h4 class="mb-2">Hello I'm</h4>
+                        <h1 class="text-white mb-xl-3 mb-lg-2">Tien Dung Vu</h1>
+                        <h5>AI Engineer/Analyst</h5>
+                        <p class="pe-5">I design and build intelligent systems from the ground up. I train machine learning models that learn from data, build computer vision pipelines that interpret the visual world, engineer NLP systems that understand language at scale, and architect LLM agents that reason, plan, and act autonomously. From raw data to deployed product, I own the full stack of intelligence.</p>
+                        <a href="#project" class="btn">View My Work</a>
+                        <a href="#contact" class="btn d2c_secondary_btn ms-4">Get In Touch</a>
+                    </div>
+                    <div class="col-md-md col-lg-6 d-flex justify-content-center justify-content-lg-end order-0 order-lg-1 mb-4 mb-md-5 mb-lg-0 wow fadeInRight">
+                        <div class="d2c_img_wrapper position-relative">
+                            <img src="./assets/images/hero.png" class="w-100 h-100" alt="Tien Dung Vu">
+                            <div class="d2c_img_overlay"></div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- hero end -->
-        </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
 
-        <!-- about section start -->
+        <!-- About Section Start -->
         <section class="d2c_about_wrapper" id="about">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="d2c_img_container position-relative me-0 me-lg-5">
-                            <div class="d2c_img_wrapper">
-                                <img src="./assets/images/about_me_2.jpg" class="img-fluid w-100 rounded-3" alt="Tien Dung Vu">
-                            </div>
-                            <div class="d2c_img_wrapper">
-                                <img src="./assets/images/about_me_1.jpg" class="img-fluid w-100 rounded-3" alt="Tien Dung Vu">
-                            </div>
-                            <img src="./assets/images/about_shade.png" alt="About Background Image">
+                    <div class="col-md-12 col-lg-6 mb-4 mb-md-5 mb-lg-0 wow fadeInLeft">
+                        <div class="d2c_img_wrapper position-relative">
+                            <img src="./assets/images/about_me.png" class="w-100 h-100" alt="Tien Dung Vu">
+                            <div class="d2c_img_overlay"></div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h3 class="d2c_sub_title position-relative">About <span>Me</span></h3>
-                        <h2 class="d2c_title position-relative">Engineering <span>AI Systems</span> End-to-End</h2>
-                        <p class="mb-3">A driven AI Engineer and Analyst who operates at the full depth of intelligent systems. My expertise spans machine learning that extracts signal from noise, NLP systems that make sense of human language, computer vision pipelines that interpret the visual world, and LLM agents that reason and act with autonomy. Backed by a strong foundation in Python, SQL, and AI system design, I build for production, not just proof of concept.</p>
-                        <p class="d2c_last_paragraph">Always learning, always pushing further into what AI can achieve. Based in Epping, NSW and open to full-time AI and ML roles across Australia.</p>
-                        <a href="#contact" class="btn">Get In Touch</a>
+                    <div class="col-md-12 col-lg-6 wow fadeInRight">
+                        <h2>Engineering AI systems end-to-end</h2>
+                        <p>A driven AI Engineer and Analyst who operates at the full depth of intelligent systems. My expertise spans machine learning that extracts signal from noise, NLP systems that make sense of human language, computer vision pipelines that interpret the visual world, and LLM agents that reason and act with autonomy. Backed by a strong foundation in Python, SQL, and AI system design, I build for production, not just proof of concept.</p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-check d2c_icon"></i>
+                                Machine learning, NLP, and computer vision in production
+                            </li>
+                            <li>
+                                <i class="fas fa-check d2c_icon"></i>
+                                LLM agents and agentic pipelines that reason and act
+                            </li>
+                            <li class="mb-4">
+                                <i class="fas fa-check d2c_icon"></i>
+                                Based in Epping, NSW and open to full-time AI/ML roles across Australia
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn">Contact me</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- about section end -->
+        <!-- About Section End -->
 
-        <!-- experience section start -->
-        <section class="d2c_service_wrapper" id="experience">
+        <!-- Skills Section Start -->
+        <section class="d2c_services_wrapper" id="services">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-0 offset-lg-2 px-2">
-                        <h3 class="d2c_sub_title text-start text-md-center position-relative">Work <span>Experience</span></h3>
-                        <h2 class="d2c_title text-start text-md-center position-relative">Where I've <span>Worked</span></h2>
+                    <div class="col-md-12 col-lg-6 offset-md-0 offset-lg-3 wow fadeInUp">
+                        <h2 class="text-center text-md-start text-lg-center">What I bring to the table</h2>
+                        <p class="text-center text-md-start text-lg-center mb-5">A comprehensive toolkit spanning the full intelligence stack. From low-level model training to production-ready deployment, I bring the depth to own any layer of an AI system.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-bullhorn"></i>
+                    <div class="col-md-6 col-lg-4 mb-4 wow fadeInDown">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-brain"></i>
+                                            </div>
+                                        </div>
+                                        <h6>Machine Learning & AI</h6>
+                                        <p class="mb-0">Text classification, sentiment analysis, topic modelling, and image classification using CNNs, BERT, TF-IDF, and Naive Bayes.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>AI-Driven Marketing Intern at Affinity Marketing Australia</h3>
-                            <p><strong>May 2026 - Present.</strong> Built AI-powered marketing automation systems and analytics infrastructure to eliminate manual production steps across recurring campaign cycles.</p>
-                            <ul>
-                                <li>Built 4 end-to-end content automation pipelines using Claude Code and n8n: SEO blog expander, video-to-content-pack, blog-to-social repurposing, and ad copy refresh</li>
-                                <li>Engineered a Looker Studio cross-channel dashboard consolidating GA4 and Search Console data, with automated weekly stakeholder summaries</li>
-                                <li>Developed a Google Ads copy generator producing 15+ Claude-generated variants and an email subject-line A/B testing pipeline</li>
-                                <li>Delivered a full SEO baseline audit across the top 10 landing pages and managed client CRM workflows in HubSpot and Salesforce</li>
-                                <li>Authored an AI automation playbook documenting all pipelines and tools for team handover</li>
-                            </ul>
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-eye"></i>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-md-0 wow fadeInDown">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                        </div>
+                                        <h6>LLM & Agentic Systems</h6>
+                                        <p class="mb-0">Multi-agent LangGraph pipelines, RAG retrieval, prompt engineering, query generation, and structured result synthesis.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>AI Engineer Intern at CMC Corporation Vietnam</h3>
-                            <p><strong>October 2024 - April 2025.</strong> Designed and implemented computer vision systems for production image classification tasks.</p>
-                            <ul>
-                                <li>Built image classification systems using Convolutional Neural Networks (CNNs)</li>
-                                <li>Applied data augmentation and normalisation techniques to improve model generalisation</li>
-                                <li>Developed end-to-end deep learning pipelines covering data preparation, training, evaluation, and hyperparameter tuning</li>
-                                <li>Evaluated model performance and iteratively improved architectures to optimise accuracy</li>
-                            </ul>
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-flask"></i>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 wow fadeInDown">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                        <h6>Computer Vision</h6>
+                                        <p class="mb-0">CNN image classification pipelines with data augmentation, normalisation, and end-to-end training and evaluation.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>AI Engineer Intern at FPT Vietnam</h3>
-                            <p><strong>September 2023 - February 2024.</strong> Gained foundational ML engineering experience across supervised learning, clustering, and NLP pipelines.</p>
-                            <ul>
-                                <li>Applied supervised learning algorithms including Linear Regression, Logistic Regression, and Decision Trees on structured datasets</li>
-                                <li>Implemented K-Means clustering for unsupervised pattern discovery</li>
-                                <li>Developed NLP classification models using word embeddings and text-processing techniques</li>
-                                <li>Conducted data analysis, visualisation, and experimentation using Google Colab</li>
-                            </ul>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-headset"></i>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-md-0 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-language"></i>
+                                            </div>
+                                        </div>
+                                        <h6>NLP</h6>
+                                        <p class="mb-0">Text preprocessing, word embeddings, sentiment frameworks, and topic modelling that make sense of human language at scale.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Passenger Service Agent at OACIS, Sydney Airport</h3>
-                            <p><strong>October 2025 - Present.</strong> Delivering high-standard passenger assistance across Sydney Airport terminals in a fast-paced, safety-focused environment.</p>
-                            <ul>
-                                <li>Assisted passengers at information desks with directions, flight updates, terminal guidance, and general travel support</li>
-                                <li>Managed passenger flow through check-in, security screening, boarding gates, and arrivals to reduce congestion</li>
-                                <li>Collaborated with airline staff, security personnel, and airport operations teams to maintain smooth daily operations</li>
-                                <li>Supported elderly passengers, families, international travellers, and passengers requiring additional assistance</li>
-                                <li>Developed communication, conflict resolution, and stakeholder management skills across diverse passenger groups</li>
-                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-md-0 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                        <h6>Data & Analytics</h6>
+                                        <p class="mb-0">Statistical analysis, feature engineering, EDA, and data cleaning. Raw, messy datasets into model-ready inputs and insights.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-laptop-code"></i>
+                                            </div>
+                                        </div>
+                                        <h6>Software Engineering</h6>
+                                        <p class="mb-0">API integration, backend development, and containerisation with Python, FastAPI, Docker, REST APIs, and Git.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- experience section end -->
+        <!-- Skills Section End -->
 
-        <div class="d2c_shade_bg_wrapper">
-            <!-- skills section start -->
-            <section class="d2c_service_wrapper" id="skills">
+        <div class="d2c_counter_choose_bg">
+            <!-- Counter Section Start -->
+            <section class="d2c_counter_wrapper">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 mb-4 mb-xl-0">
-                            <h3 class="d2c_sub_title position-relative">My <span>Skills</span></h3>
-                            <h2 class="d2c_title position-relative">What I <span>Bring</span> to the Table</h2>
-                            <p>A comprehensive toolkit spanning the full intelligence stack. From low-level model training to production-ready deployment, I bring the depth to own any layer of an AI system.</p>
+                    <div class="d2c_border_bg">
+                        <div class="d2c_count_wrapper">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Machine Learning</li>
-                                        <li>LLM Systems</li>
-                                        <li>Agentic Pipelines</li>
-                                    </ul>
+                                <div class="col-6 col-md-3 text-center mb-4 mb-md-0 wow fadeInUp">
+                                    <h1><span class="count">5</span>+</h1>
+                                    <h6>Major Projects</h6>
                                 </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Computer Vision</li>
-                                        <li>NLP</li>
-                                        <li>Data Analytics</li>
-                                    </ul>
+                                <div class="col-6 col-md-3 text-center wow fadeInUp">
+                                    <h1><span class="count">3</span></h1>
+                                    <h6>AI Internships</h6>
+                                </div>
+                                <div class="col-6 col-md-3 text-center wow fadeInUp">
+                                    <h1><span class="count">4</span></h1>
+                                    <h6>Automation Pipelines Shipped</h6>
+                                </div>
+                                <div class="col-6 col-md-3 text-center wow fadeInUp">
+                                    <h1><span class="count">15</span>+</h1>
+                                    <h6>Technologies Used</h6>
                                 </div>
                             </div>
-                            <a href="#contact" class="btn">get in touch</a>
                         </div>
-                        <div class="col-xl-6">
+                    </div>
+                </div>
+            </section>
+            <!-- Counter Section End -->
+
+            <!-- Experience Section Start -->
+            <section class="d2c_choose_me_wrapper" id="experience">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6 order-1 order-lg-0 wow fadeInLeft">
+                            <h2>Where I've worked</h2>
+                            <p class="mb-lg-4">Hands-on AI engineering experience across marketing automation, computer vision, and machine learning, alongside customer-facing operations work.</p>
+                            <ul class="ps-0">
+                                <li class="d-flex">
+                                    <div>
+                                        <i class="fas fa-bullhorn d2c_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h6>AI-Driven Marketing Intern, Affinity Marketing Australia (May 2026 - Present)</h6>
+                                        <p>Built 4 end-to-end content automation pipelines with Claude Code and n8n (SEO blog expander, video-to-content-pack, blog-to-social repurposing, ad copy refresh). Engineered a Looker Studio dashboard consolidating GA4 and Search Console data with automated weekly stakeholder summaries, developed a Google Ads copy generator producing 15+ Claude-generated variants plus an email subject-line A/B testing pipeline, delivered a full SEO baseline audit across the top 10 landing pages, managed client CRM workflows in HubSpot and Salesforce, and authored an AI automation playbook for team handover.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div>
+                                        <i class="fas fa-eye d2c_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h6>AI Engineer Intern, CMC Corporation Vietnam (Oct 2024 - Apr 2025)</h6>
+                                        <p>Built image classification systems using Convolutional Neural Networks, applied data augmentation and normalisation to improve generalisation, and developed end-to-end deep learning pipelines covering data preparation, training, evaluation, and hyperparameter tuning, iteratively improving architectures to optimise accuracy.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div>
+                                        <i class="fas fa-flask d2c_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h6>AI Engineer Intern, FPT Vietnam (Sep 2023 - Feb 2024)</h6>
+                                        <p>Applied supervised learning algorithms including Linear Regression, Logistic Regression, and Decision Trees on structured datasets, implemented K-Means clustering for unsupervised pattern discovery, developed NLP classification models using word embeddings, and conducted data analysis and visualisation in Google Colab.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div>
+                                        <i class="fas fa-headset d2c_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Passenger Service Agent, OACIS, Sydney Airport (Oct 2025 - Present)</h6>
+                                        <p class="mb-0">Delivering high-standard passenger assistance across Sydney Airport terminals: information desk support, passenger flow management through check-in, security, boarding, and arrivals, and collaboration with airline staff, security, and airport operations teams, building communication, conflict resolution, and stakeholder management skills across diverse passenger groups.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex justify-content-center justify-content-lg-end order-0 order-lg-1 mb-4 mb-md-5 mb-lg-0 wow fadeInRight">
+                            <div class="d2c_img_wrapper position-relative">
+                                <img src="./assets/images/experience.png" class="w-100 h-100" alt="Tien Dung Vu">
+                                <div class="d2c_img_overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience Section End -->
+        </div>
+
+        <div class="d2c_cta_project_bg">
+            <!-- Call To Ation Section Start -->
+            <section class="d2c_c2a_wrapper">
+                <div class="container">
+                    <div class="d2c_border_bg">
+                        <div class="d2c_c2a_card text-center">
                             <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="d2c_card_wrapper">
-                                        <div class="d2c_icon_wrapper">
-                                            <i class="fas fa-brain"></i>
+                                <div class="col-md-12 col-lg-10 offset-lg-1 wow fadeInUp">
+                                    <h2>Let's work together</h2>
+                                    <p>Open to full-time AI and ML roles across Australia. Always learning, always pushing further into what AI can achieve. I'd love to chat about what we could build together.</p>
+                                    <a href="#contact" class="btn">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call To Ation Section End -->
+
+            <!-- Project Section Start -->
+            <section class="d2c_project_wrapper" id="project">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 wow fadeInUp">
+                            <h2 class="text-center">Things I've built</h2>
+                            <p class="text-center">From full-stack AI platforms to research agents and mobile apps. Hover over each project for the details, or find the code on <a href="https://github.com/BillVu05" target="_blank" rel="noopener">GitHub</a>.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0 wow fadeInLeft">
+                            <div class="d2c_img_wrapper d2c_large_img position-relative w-100">
+                                <img src="./assets/images/portfolio_one.png" class="w-100 h-100" alt="Pacific Wings Airline Strategy Simulator">
+                                <div class="d2c_overlay"></div>
+                                <div class="d2c_card">
+                                    <div class="d2c_card_child h-100">
+                                        <div class="d2c_card_child_two h-100">
+                                            <div class="d2c_card_child_three position-relative">
+                                                <div class="d2c_content_wrapper">
+                                                    <h3><a href="https://github.com/BillVu05/AeroStrategist-AI" target="_blank" rel="noopener">Pacific Wings Airline Strategy Simulator</a></h3>
+                                                    <p>Full-stack airline strategy platform ingesting real BITRE, World Bank, and OurAirports data, surfaced across an 11-page Next.js dashboard.</p>
+                                                    <h4>Python, FastAPI, Next.js, XGBoost, LangGraph, Gemini AI, PostgreSQL, Docker</h4>
+                                                    <ul class="mb-0">
+                                                        <li>
+                                                            <i class="fas fa-check d2c_icon"></i>
+                                                            XGBoost demand model (R²=0.952)
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check d2c_icon"></i>
+                                                            Monte Carlo risk simulator + 5-agent copilot
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check d2c_icon"></i>
+                                                            Conversational agent with 11 tools
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Machine Learning & AI</h3>
-                                        <p>Text classification, sentiment analysis, topic modelling, and image classification using CNNs, BERT, TF-IDF, and Naive Bayes. Capable across the full supervised and unsupervised learning spectrum.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mt-xl-4 mb-4 mb-lg-0">
-                                    <div class="d2c_card_wrapper">
-                                        <div class="d2c_icon_wrapper">
-                                            <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="row mb-4">
+                                <div class="col-md-6 col-lg-6 col-xl-7 mb-4 mb-md-0 wow fadeInDown">
+                                    <div class="d2c_img_wrapper d2c_small_img position-relative w-100">
+                                        <img src="./assets/images/portfolio_two.png" class="w-100 h-100" alt="Research LLM Agent">
+                                        <div class="d2c_overlay"></div>
+                                        <div class="d2c_card">
+                                            <div class="d2c_card_child h-100">
+                                                <div class="d2c_card_child_two h-100">
+                                                    <div class="d2c_card_child_three">
+                                                        <div class="d2c_content_wrapper">
+                                                            <h3><a href="https://github.com/BillVu05/Round-1-code" target="_blank" rel="noopener">Research LLM Agent (CLI)</a></h3>
+                                                            <p>CLI research agent with a 4-node LangGraph pipeline: GenerateQueries, WebSearch, Reflect, Synthesize.</p>
+                                                            <h4>Python, LangGraph, Gemini, SerpAPI, Docker</h4>
+                                                            <ul class="mb-0">
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Reflection loop re-searches coverage gaps
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Cited Markdown and JSON answers
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Layered errors, 5-scenario test suite
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>LLM & Agentic Systems</h3>
-                                        <p>Multi-agent LangGraph pipelines, RAG retrieval, prompt engineering, query generation, and result synthesis. I design agents that reason, search, and produce structured outputs autonomously.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4 mb-md-0">
-                                    <div class="d2c_card_wrapper d2c_service_card position-relative">
-                                        <div class="d2c_icon_wrapper">
-                                            <i class="fas fa-chart-bar"></i>
+                                <div class="col-md-6 col-lg-6 col-xl-5 wow fadeInDown">
+                                    <div class="d2c_img_wrapper d2c_small_img position-relative w-100">
+                                        <img src="./assets/images/portfolio_three.png" class="w-100 h-100" alt="Misinformation Detection System">
+                                        <div class="d2c_overlay"></div>
+                                        <div class="d2c_card">
+                                            <div class="d2c_card_child h-100">
+                                                <div class="d2c_card_child_two h-100">
+                                                    <div class="d2c_card_child_three">
+                                                        <div class="d2c_content_wrapper">
+                                                            <h3><a href="https://github.com/Imagine961/NLP---Misinformation-detection" target="_blank" rel="noopener">Misinformation Detection System</a></h3>
+                                                            <p>Led a team of 5 at UTS to build a binary fake-news classifier with parallelised NLP preprocessing.</p>
+                                                            <h4>Python, scikit-learn, TF-IDF, Naive Bayes</h4>
+                                                            <ul class="mb-0">
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    TF-IDF with 40k features
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    F1 and confusion matrix evaluation
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Reusable .pkl models, real-time CLI
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Data & Analytics</h3>
-                                        <p>Statistical analysis, feature engineering, exploratory data analysis, and data cleaning. I turn raw, messy datasets into clean, model-ready inputs and actionable insights.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mt-xl-4">
-                                    <div class="d2c_card_wrapper">
-                                        <div class="d2c_icon_wrapper">
-                                            <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-xl-5 mb-4 mb-md-0 wow fadeInUp">
+                                    <div class="d2c_img_wrapper d2c_small_img position-relative w-100">
+                                        <img src="./assets/images/portfolio_four.png" class="w-100 h-100" alt="Australian Media Sentiment and Framing of AI">
+                                        <div class="d2c_overlay"></div>
+                                        <div class="d2c_card">
+                                            <div class="d2c_card_child h-100">
+                                                <div class="d2c_card_child_two h-100">
+                                                    <div class="d2c_card_child_three">
+                                                        <div class="d2c_content_wrapper">
+                                                            <h3><a href="https://github.com/BillVu05/ainewssentiment" target="_blank" rel="noopener">Australian Media Sentiment & Framing of AI</a></h3>
+                                                            <p>Analysed 1,033 Guardian Australia articles (2017-2026) for UTS / The Sydney Morning Herald.</p>
+                                                            <h4>Python, VADER, RoBERTa, FinBERT, BERTopic, Guardian API</h4>
+                                                            <ul class="mb-0">
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Three-model sentiment framework
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Found headline-body negativity divergence
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    6 editorial recommendations to SMH
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Software Engineering</h3>
-                                        <p>API integration, backend development, system design, and containerisation using Python, FastAPI, Docker, REST APIs, and Git. I build the infrastructure that intelligence runs on.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-7 wow fadeInUp">
+                                    <div class="d2c_img_wrapper d2c_small_img position-relative w-100">
+                                        <img src="./assets/images/portfolio_five.png" class="w-100 h-100" alt="Stock Information and Alert App">
+                                        <div class="d2c_overlay"></div>
+                                        <div class="d2c_card">
+                                            <div class="d2c_card_child h-100">
+                                                <div class="d2c_card_child_two h-100">
+                                                    <div class="d2c_card_child_three">
+                                                        <div class="d2c_content_wrapper">
+                                                            <h3><a href="https://github.com/PrinceAlii/IOSAssesment3" target="_blank" rel="noopener">Stock Information & Alert App (SVB)</a></h3>
+                                                            <p>iOS stock tracker built in a team of 4 at UTS using MVVM and async/await.</p>
+                                                            <h4>Swift, SwiftUI, Swift Charts, SwiftData, Polygon.io</h4>
+                                                            <ul class="mb-0">
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Price charts across 5 time periods
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Per-ticker financial news
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    SwiftData-backed price alerts
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -290,187 +563,123 @@
                     </div>
                 </div>
             </section>
-            <!-- skills section end -->
+            <!-- Project Section End -->
         </div>
 
-        <!-- projects section start -->
-        <section class="d2c_service_wrapper" id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-0 offset-lg-2 px-2">
-                        <h3 class="d2c_sub_title text-start text-md-center position-relative">My <span>Projects</span></h3>
-                        <h2 class="d2c_title text-start text-md-center position-relative">Things I've <span>Built</span></h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-plane"></i>
-                            </div>
-                            <h3><a href="https://github.com/BillVu05/AeroStrategist-AI" target="_blank" rel="noopener">Pacific Wings Airline Strategy Simulator</a></h3>
-                            <p><strong>Python, FastAPI, Next.js, XGBoost, LangGraph, Gemini AI, PostgreSQL, Docker.</strong> Full-stack airline strategy platform ingesting real BITRE, World Bank, and OurAirports data — featuring an XGBoost demand model (R²=0.952), Monte Carlo risk simulator, LangGraph 5-agent copilot, and a conversational AI agent with 11 function-calling tools, all surfaced across an 11-page Next.js dashboard.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <h3><a href="https://github.com/BillVu05/Round-1-code" target="_blank" rel="noopener">Research LLM Agent (CLI)</a></h3>
-                            <p><strong>Python, LangGraph, Gemini, SerpAPI, Docker.</strong> CLI research agent with a 4-node LangGraph pipeline (GenerateQueries → WebSearch → Reflect → Synthesize) and a conditional reflection loop that re-searches on coverage gaps, producing cited Markdown JSON answers with layered error handling and a 5-scenario test suite.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3><a href="https://github.com/Imagine961/NLP---Misinformation-detection" target="_blank" rel="noopener">Misinformation Detection System</a></h3>
-                            <p><strong>Python, scikit-learn, TF-IDF, Naive Bayes — UTS.</strong> Led a team of 5 to build a binary fake-news classifier using parallelised NLP preprocessing, TF-IDF (40k features), and Multinomial Naive Bayes — evaluated with F1/confusion matrix and persisted as reusable .pkl files with a real-time CLI prediction loop.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                            <h3><a href="https://github.com/BillVu05/ainewssentiment" target="_blank" rel="noopener">Australian Media Sentiment & Framing of AI</a></h3>
-                            <p><strong>Python, VADER, RoBERTa, FinBERT, BERTopic, Guardian API — UTS / The Sydney Morning Herald.</strong> Analysed 1,033 Guardian Australia articles (2017–2026) with a three-model sentiment framework and BERTopic topic modelling, uncovering a persistent headline-body negativity divergence and a structural post-ChatGPT sentiment shift — delivering 6 editorial recommendations to SMH.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d2c_card_wrapper">
-                            <div class="d2c_icon_wrapper">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3><a href="https://github.com/PrinceAlii/IOSAssesment3" target="_blank" rel="noopener">Stock Information & Alert App (SVB)</a></h3>
-                            <p><strong>Swift, SwiftUI, Swift Charts, SwiftData, Polygon.io — UTS.</strong> iOS stock tracker built in a team of 4 (MVVM, async/await) — owned the stock detail screen with a Swift Charts price chart across 5 time periods, per-ticker financial news, and SwiftData-backed price alert configuration.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-3">
-                    <a href="https://github.com/BillVu05" target="_blank" class="btn">See More on GitHub</a>
-                </div>
-            </div>
-        </section>
-        <!-- projects section end -->
-
-        <!-- contact section start -->
+        <!-- Contact Section Start -->
         <section class="d2c_contact_wrapper" id="contact">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h3 class="d2c_sub_title position-relative">Contact <span>Me</span></h3>
-                        <h2>Let's <span>Work Together</span></h2>
-                        <p>Open to full-time AI/ML roles across Australia. I'd love to chat about what we could build together.</p>
-                        <a href="mailto:tiendung7v1@gmail.com" class="btn">Email Me</a>
-                        <p class="mt-4">Or call <a href="tel:+61466599354">(+61) 466-599-354</a> · Epping, NSW, Australia · <a href="https://github.com/BillVu05" target="_blank">GitHub</a></p>
+                <div class="row">
+                    <div class="col-md-10 col-lg-6 offset-md-1 offset-lg-3 text-center wow fadeInDown">
+                        <h2>Get in touch with me</h2>
+                        <p class="px-0 px-md-5">Open to full-time AI/ML roles across Australia. I'd love to chat about what we could build together.</p>
                     </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0 text-center">
-                        <div class="d2c_vector_img_wrapper">
-                            <div class="d2c_shade_bg">
-                                <img src="./assets/images/contact-hero.png" class="img-fluid" alt="Tien Dung Vu pointing, contact me">
-                            </div>
-                        </div>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
+                        <a href="mailto:tiendung7v1@gmail.com" class="btn">Email Me</a>
+                        <p class="mt-4 mb-0">Or call <a href="tel:+61466599354">(+61) 466-599-354</a> · Epping, NSW, Australia · <a href="https://github.com/BillVu05" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/dũng-vũ-tiến-b00a02317" target="_blank" rel="noopener">LinkedIn</a></p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- contact section end -->
+        <!-- Contact Section End -->
 
-        <!-- footer section start -->
+        <!-- Footer Section Start -->
         <footer class="d2c_footer_wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-5 mb-md-0">
-                        <img src="./assets/images/logo-mark.png" alt="Tien Dung Vu logo" class="d2c_footer_logo mb-4">
-                        <p>AI Engineer crafting ML, NLP, and agentic systems, always building, always pushing further. Open to full-time roles in Australia.</p>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 wow fadeInLeft">
+                        <div class="d2c_footer_card">
+                            <a href="./index.html"><img src="./assets/images/logo-mark.png" alt="Tien Dung Vu logo" style="max-width: 106px;"></a>
+                            <p class="mb-0">AI Engineer crafting ML, NLP, and agentic systems, always building, always pushing further. Open to full-time roles in Australia.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-5 mb-md-0">
-                        <h3><span>Contact Details</span></h3>
-                        <ul class="d2c_company_info list-group">
-                            <li class="py-1 py-md-2">
-                                <a href="tel:+61466599354">
-                                    <i class="fas fa-phone-alt"></i>
-                                    (+61) 466-599-354
-                                </a>
-                            </li>
-                            <li class="py-1 py-md-2">
-                                <a href="mailto:tiendung7v1@gmail.com">
-                                    <i class="fas fa-envelope"></i>
-                                    tiendung7v1@gmail.com
-                                </a>
-                            </li>
-                            <li class="py-1 py-md-2">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Epping, NSW, Australia
-                            </li>
-                        </ul>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 wow fadeInUp">
+                        <div class="d2c_footer_card">
+                            <h3>Contact details</h3>
+                            <ul class="mb-0 list-unstyled">
+                                <li class="mb-2 mb-xl-3">
+                                    <a href="tel:+61466599354"><i class="fas fa-phone-alt d2c_icon"></i> (+61) 466-599-354</a>
+                                </li>
+                                <li class="mb-2 mb-xl-3">
+                                    <a href="mailto:tiendung7v1@gmail.com"><i class="fas fa-envelope d2c_icon"></i> tiendung7v1@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt d2c_icon"></i> Epping, NSW, Australia
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3><span>Socials</span></h3>
-                        <ul class="d2c_company_info list-group">
-                            <li class="py-1 py-md-2">
-                                <a href="./assets/cv.pdf" target="_blank" rel="noopener">
-                                    <i class="fas fa-file-pdf"></i>
-                                    Download CV
-                                </a>
-                            </li>
-                            <li class="py-1 py-md-2">
-                                <a href="mailto:tiendung7v1@gmail.com" target="_blank" rel="noopener">
-                                    <i class="fas fa-envelope"></i>
-                                    Gmail
-                                </a>
-                            </li>
-                            <li class="py-1 py-md-2">
-                                <a href="https://github.com/BillVu05" target="_blank" rel="noopener">
-                                    <i class="fab fa-github"></i>
-                                    GitHub
-                                </a>
-                            </li>
-                            <li class="py-1 py-md-2">
-                                <a href="https://www.linkedin.com/in/dũng-vũ-tiến-b00a02317" target="_blank" rel="noopener">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-md-12 col-lg-4 wow fadeInRight">
+                        <div class="d2c_footer_card">
+                            <h3>Socials</h3>
+                            <ul class="mb-0 list-unstyled">
+                                <li class="mb-2 mb-xl-3">
+                                    <a href="./assets/cv.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf d2c_icon"></i> Download CV</a>
+                                </li>
+                                <li class="mb-2 mb-xl-3">
+                                    <a href="mailto:tiendung7v1@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope d2c_icon"></i> Gmail</a>
+                                </li>
+                                <li class="mb-2 mb-xl-3">
+                                    <a href="https://github.com/BillVu05" target="_blank" rel="noopener"><i class="fab fa-github d2c_icon"></i> GitHub</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/dũng-vũ-tiến-b00a02317" target="_blank" rel="noopener"><i class="fab fa-linkedin-in d2c_icon"></i> LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="d2c_copy_wrapper">
-                    <h4 class="text-center">© 2023 <a href="https://www.designtocodes.com/" target="_blank">DesignToCodes</a>. All Right Reserved</h4>
                 </div>
             </div>
         </footer>
-        <!-- footer section end -->
+        <!-- Footer Section End -->
+        <!-- Copy Right Section Start -->
+        <div class="d2c_copy_right_wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-0 text-center text-md-start">&copy;2026 Tien Dung Vu. Template by <a href="https://www.designtocodes.com/" target="_blank">DesignToCodes</a>.</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <ul class="list-group list-group-horizontal">
+                            <li>
+                                <a href="https://github.com/BillVu05" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github d2c_icon"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/dũng-vũ-tiến-b00a02317" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in d2c_icon"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:tiendung7v1@gmail.com" aria-label="Email"><i class="fas fa-envelope d2c_icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copy Right Section End -->
 
-        <!--   Scroll Button Start   -->
+        <!-- Scroll Button Start -->
         <div id="scrollBtn">
             <a href="#">
                 <i class="fas fa-chevron-up"></i>
             </a>
         </div>
-        <!--   Scroll Button  End   -->
+        <!-- Scroll Button  End -->
     </main>
 
 
 
-    <!-- js cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- bootstrap js -->
+
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- WOW Animation JS -->
+    <script src="./lib/WOW-master/dist/wow.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="./lib/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <!-- main js -->
+    <!-- Slider JS Link -->
+    <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Main JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
-
-
-<!--
-    Template Name: {{Tech Start Pro}}
-    Template URL: {{https://www.designtocodes.com/product/techstart-pro-responsive-bootstrap-landing-page/}}
-    Description: {{TechStart Pro landing page is the definitive solution for businesses and individuals seeking a top-tier online presence. This responsive Bootstrap landing page is not just good-looking, it's also simple.}}
-    Author: DesignToCodes
-    Author URL: https://www.designtocodes.com
-    Text Domain: {{ Tech Start Pro }}
- -->
