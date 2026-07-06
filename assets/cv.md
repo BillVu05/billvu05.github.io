@@ -138,6 +138,16 @@ June 2026 – Present
 * Authored `NewsService` and `StockDetailViewModel` to fetch, decode, and display contextual financial news per ticker from the Polygon news endpoint, with full async error handling and loading-state management
 * Integrated SwiftData-backed price alert configuration and real-time favourite state into the detail view, coordinating shared state across multiple ViewModels via `@EnvironmentObject`
 
+### UFMO: Accessible Apple Vision Pro Game
+
+**Apple Vision Pro, Spatial Audio, Eye Tracking, ElevenLabs Studio API | UTS Human Augmentation Lab**
+
+* Collaborated with the Human Augmentation Lab at UTS to build UFMO, an Apple Vision Pro game designed to make gaming accessible and enjoyable for the blind and visually impaired (BVI) community, integrating accessibility into the core gameplay rather than treating it as an afterthought
+* Led development of the audio customisation system, allowing players to personalise directional audio, detection distance, time between echolocation pings, and audio height positioning to suit their individual needs
+* Integrated Text-to-Speech using the ElevenLabs Studio API, enabling natural voice guidance so players can navigate menus independently, understand gameplay instructions, and interact with the game without relying on visual interfaces
+* Designed and implemented accessibility tools built around spatial audio as the primary navigation system, echolocation mechanics for environmental perception, eye tracking for aiming, and custom finger gesture controls
+* Contributed to a tutorial scene for testing and calibrating accessibility settings before gameplay, supporting the project vision of adapting the game to the player rather than requiring the player to adapt to the game
+
 ## Education
 
 ### University of Technology Sydney (UTS)

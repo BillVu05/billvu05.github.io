@@ -402,6 +402,13 @@ h1 span {
     padding: 25px;
     background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
 }
+/* ponytail: equal-height cards so rows stay bottom-aligned regardless of text wrap */
+.d2c_services_wrapper .d2c_card,
+.d2c_services_wrapper .d2c_card_child,
+.d2c_services_wrapper .d2c_card_child_two,
+.d2c_services_wrapper .d2c_card_child_three {
+    height: 100%;
+}
 .d2c_card:hover .d2c_card_child_two {
     background: linear-gradient(0deg, rgba(94,106,210,0.3) 0%, rgba(27,31,47,1) 30%);
     transition: 0.4s all;
