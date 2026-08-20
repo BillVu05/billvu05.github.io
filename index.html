@@ -32,9 +32,6 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000" rel="stylesheet">
     <!-- Font Awesome 5 CDN/ Icon Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Slider CSS Link -->
-    <link rel="stylesheet" href="./lib/slick/slick/slick.css">
-    <link rel="stylesheet" href="./lib/slick/slick/slick-theme.css">
     <!-- Bootstarp CSS -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <!-- Main CSS -->
@@ -42,7 +39,7 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#d2c_main_nav" data-bs-root-margin="0px 0px -70%" data-bs-smooth-scroll="true">
     <!--  Preloader Start  -->
     <div class="preloader">
         <img src="./assets/images/logo-mark.png" alt="Tien Dung Vu logo">
@@ -68,19 +65,19 @@
                 <div class="collapse navbar-collapse js-clone-nav justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">Awards</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#achievements">Awards</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#project">Projects</a>
@@ -111,22 +108,24 @@
     </header>
     <!-- Header End -->
 
-    <main data-bs-spy="scroll" data-bs-target="#d2c_main_nav" class="position-relative">
+    <main class="position-relative">
         <!-- Hero Section Start -->
         <section class="d2c_hero_wrapper" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-md col-lg-6 order-1 order-lg-0 wow fadeInLeft">
-                        <h4 class="mb-2">Hello I'm</h4>
+                        <p class="d2c_hero_greeting mb-2">Hello I'm</p>
                         <h1 class="text-white mb-xl-3 mb-lg-2">Tien Dung Vu</h1>
-                        <h5>AI Engineer / Analyst</h5>
+                        <p class="d2c_hero_role">AI Engineer / Analyst</p>
                         <p class="pe-5">I design and build intelligent systems from the ground up. I train machine learning models that learn from data, build computer vision pipelines that interpret the visual world, engineer NLP systems that understand language at scale, and architect LLM agents that reason, plan, and act autonomously. From raw data to deployed product, I own the full stack of intelligence.</p>
-                        <a href="#project" class="btn">View My Work</a>
-                        <a href="#contact" class="btn d2c_secondary_btn ms-4">Get In Touch</a>
+                        <div class="d2c_hero_actions">
+                            <a href="#project" class="btn">View My Work</a>
+                            <a href="./assets/cv-tien-dung-vu.pdf" class="btn d2c_secondary_btn" download target="_blank" rel="noopener"><i class="fas fa-file-pdf me-2"></i>Download CV</a>
+                        </div>
                     </div>
                     <div class="col-md-md col-lg-6 d-flex justify-content-center justify-content-lg-end order-0 order-lg-1 mb-4 mb-md-5 mb-lg-0 wow fadeInRight">
                         <div class="d2c_img_wrapper position-relative">
-                            <img src="./assets/images/hero.webp" class="w-100 h-100" alt="Tien Dung Vu" width="589" height="476" fetchpriority="high" decoding="async">
+                            <img src="./assets/images/hero.webp" class="w-100 h-100" alt="Tien Dung Vu, AI Engineer" width="589" height="476" fetchpriority="high" decoding="async">
                             <div class="d2c_img_overlay"></div>
                         </div>
                     </div>
@@ -141,7 +140,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12 col-lg-6 mb-4 mb-md-5 mb-lg-0 wow fadeInLeft">
                         <div class="d2c_img_wrapper position-relative">
-                            <img src="./assets/images/about-me.webp" class="w-100 h-100" alt="Tien Dung Vu" width="589" height="476" loading="lazy" decoding="async">
+                            <img src="./assets/images/about-me.webp" class="w-100 h-100" alt="" width="589" height="476" loading="lazy" decoding="async">
                             <div class="d2c_img_overlay"></div>
                         </div>
                     </div>
@@ -162,12 +161,99 @@
                                 Based in Epping, NSW and open to full-time AI/ML roles across Australia
                             </li>
                         </ul>
+                        <div class="d2c_education mb-4">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <p class="mb-0"><strong>Bachelor of Artificial Intelligence</strong>, University of Technology Sydney. Graded High Distinction across the degree, covering machine learning, NLP, computer vision, and AI system design.</p>
+                        </div>
                         <a href="#contact" class="btn">Contact me</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Section End -->
+
+        <!-- Achievements Section Start -->
+        <section class="d2c_services_wrapper d2c_awards_wrapper" id="achievements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 offset-md-0 offset-lg-2 wow fadeInUp">
+                        <h2 class="text-center">Awards and certifications</h2>
+                        <p class="text-center mb-5">Faculty honours from UTS and industry certifications in applied AI, earned alongside the work.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-award"></i>
+                                            </div>
+                                        </div>
+                                        <h3>Dean's List 2024</h3>
+                                        <p class="mb-0">Faculty of Engineering and Information Technology, UTS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-award"></i>
+                                            </div>
+                                        </div>
+                                        <h3>Dean's List 2025</h3>
+                                        <p class="mb-0">Faculty of Engineering and Information Technology, UTS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-certificate"></i>
+                                            </div>
+                                        </div>
+                                        <h3>AI Fundamentals: Foundations for Understanding AI</h3>
+                                        <p class="mb-0">Issued by IBM, July 2026.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp">
+                        <div class="d2c_card text-center">
+                            <div class="d2c_card_child">
+                                <div class="d2c_card_child_two">
+                                    <div class="d2c_card_child_three">
+                                        <div class="d2c_icon_wrapper">
+                                            <div class="d2c_service_icon">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                        </div>
+                                        <h3>AI Agent Builder</h3>
+                                        <p class="mb-0">Issued by Make, July 2026.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Achievements Section End -->
 
         <!-- Skills Section Start -->
         <section class="d2c_services_wrapper" id="services">
@@ -189,7 +275,7 @@
                                                 <i class="fas fa-brain"></i>
                                             </div>
                                         </div>
-                                        <h6>Machine Learning & AI</h6>
+                                        <h3>Machine Learning & AI</h3>
                                         <p class="mb-0">Text classification, sentiment analysis, topic modelling, and image classification using CNNs, BERT, TF-IDF, and Naive Bayes, trained, tuned, and evaluated end to end for real-world accuracy.</p>
                                     </div>
                                 </div>
@@ -206,7 +292,7 @@
                                                 <i class="fas fa-robot"></i>
                                             </div>
                                         </div>
-                                        <h6>LLM & Agentic Systems</h6>
+                                        <h3>LLM & Agentic Systems</h3>
                                         <p class="mb-0">Multi-agent LangGraph pipelines, RAG retrieval, prompt engineering, query generation, and structured result synthesis, plus production content automation built on Claude Code and n8n.</p>
                                     </div>
                                 </div>
@@ -223,7 +309,7 @@
                                                 <i class="fas fa-eye"></i>
                                             </div>
                                         </div>
-                                        <h6>Computer Vision</h6>
+                                        <h3>Computer Vision</h3>
                                         <p class="mb-0">CNN image classification pipelines with data augmentation, normalisation, and hyperparameter tuning, iterating on architectures across end-to-end training and evaluation.</p>
                                     </div>
                                 </div>
@@ -240,7 +326,7 @@
                                                 <i class="fas fa-language"></i>
                                             </div>
                                         </div>
-                                        <h6>NLP</h6>
+                                        <h3>NLP</h3>
                                         <p class="mb-0">Text preprocessing, word embeddings, sentiment frameworks, and topic modelling that make sense of human language at scale, from raw corpora through to deployable insight.</p>
                                     </div>
                                 </div>
@@ -257,7 +343,7 @@
                                                 <i class="fas fa-chart-bar"></i>
                                             </div>
                                         </div>
-                                        <h6>Data & Analytics</h6>
+                                        <h3>Data & Analytics</h3>
                                         <p class="mb-0">Power BI and Looker Studio dashboards consolidating GA4 and Search Console data, automated weekly stakeholder reporting, ETL/ELT pipelines into PostgreSQL, and A/B and hypothesis testing that turn raw metrics into decisions.</p>
                                     </div>
                                 </div>
@@ -274,7 +360,7 @@
                                                 <i class="fas fa-laptop-code"></i>
                                             </div>
                                         </div>
-                                        <h6>Software Engineering</h6>
+                                        <h3>Software Engineering</h3>
                                         <p class="mb-0">API integration, backend development, containerisation, and GitHub Actions CI/CD with Python, FastAPI, Docker, REST APIs, and Git, shipping models as reliable, production-ready services.</p>
                                     </div>
                                 </div>
@@ -294,20 +380,20 @@
                         <div class="d2c_count_wrapper">
                             <div class="row">
                                 <div class="col-6 col-md-3 text-center mb-4 mb-md-0 wow fadeInUp">
-                                    <h1><span class="count">5</span>+</h1>
-                                    <h6>Major Projects</h6>
+                                    <p class="d2c_count_value"><span class="count" data-count="120000">120,000</span>+</p>
+                                    <p class="d2c_count_label mb-0">Records through ML and ETL pipelines</p>
+                                </div>
+                                <div class="col-6 col-md-3 text-center mb-4 mb-md-0 wow fadeInUp">
+                                    <p class="d2c_count_value"><span class="count" data-count="700">700</span></p>
+                                    <p class="d2c_count_label mb-0">Documents in a production RAG index</p>
                                 </div>
                                 <div class="col-6 col-md-3 text-center wow fadeInUp">
-                                    <h1><span class="count">3</span></h1>
-                                    <h6>AI Internships</h6>
+                                    <p class="d2c_count_value"><span class="count" data-count="10">10</span></p>
+                                    <p class="d2c_count_label mb-0">ML endpoints deployed on AWS</p>
                                 </div>
                                 <div class="col-6 col-md-3 text-center wow fadeInUp">
-                                    <h1><span class="count">4</span></h1>
-                                    <h6>Automation Pipelines Shipped</h6>
-                                </div>
-                                <div class="col-6 col-md-3 text-center wow fadeInUp">
-                                    <h1><span class="count">15</span>+</h1>
-                                    <h6>Technologies Used</h6>
+                                    <p class="d2c_count_value"><span class="count" data-count="50">50</span></p>
+                                    <p class="d2c_count_label mb-0">Staff served by the RAG assistant</p>
                                 </div>
                             </div>
                         </div>
@@ -329,8 +415,13 @@
                                         <i class="fas fa-bullhorn d2c_icon"></i>
                                     </div>
                                     <div>
-                                        <h6>AI-Driven Marketing Intern, Affinity Marketing Australia (May 2026 - Present)</h6>
-                                        <p>Built 4 end-to-end content automation pipelines with Claude Code and n8n (SEO blog expander, video-to-content-pack, blog-to-social repurposing, ad copy refresh). Engineered a Looker Studio dashboard consolidating GA4 and Search Console data with automated weekly stakeholder summaries, developed a Google Ads copy generator producing 15+ Claude-generated variants plus an email subject-line A/B testing pipeline, delivered a full SEO baseline audit across the top 10 landing pages, managed client CRM workflows in HubSpot and Salesforce, and authored an AI automation playbook for team handover.</p>
+                                        <h3>AI-Driven Marketing Intern, Affinity Marketing Australia (May 2026 - Present)</h3>
+                                        <ul class="d2c_role_points">
+                                            <li>Built 4 end-to-end content automation pipelines with Claude Code and n8n: SEO blog expander, video-to-content-pack, blog-to-social repurposing, and ad copy refresh.</li>
+                                            <li>Engineered a Looker Studio dashboard consolidating GA4 and Search Console data, with automated weekly stakeholder summaries.</li>
+                                            <li>Developed a Google Ads copy generator producing 15+ Claude-generated variants, plus an email subject-line A/B testing pipeline.</li>
+                                            <li>Delivered a full SEO baseline audit across the top 10 landing pages, managed client CRM workflows in HubSpot and Salesforce, and authored an AI automation playbook for team handover.</li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -338,8 +429,14 @@
                                         <i class="fas fa-eye d2c_icon"></i>
                                     </div>
                                     <div>
-                                        <h6>AI Engineer Intern, CMC Corporation Vietnam (Oct 2024 - Apr 2025)</h6>
-                                        <p>Built an AI-driven employee onboarding system in a team of 5: ETL/ELT pipelines in Python and SQL loading 120,000+ HR records into PostgreSQL on daily incremental loads, classical ML models (scikit-learn, XGBoost) for attrition risk scoring and cohort clustering, time-series forecasting of onboarding volume, and a retrieval-augmented generation (RAG) assistant over 700 internal policy documents served from a FAISS vector index to 50 HR staff and new starters. Ran hypothesis testing and A/B tests on onboarding interventions, deployed the trained models to AWS behind 10 FastAPI endpoints containerised with Docker, and built Power BI dashboards on onboarding throughput and data quality.</p>
+                                        <h3>AI Engineer Intern, CMC Corporation Vietnam (Oct 2024 - Apr 2025)</h3>
+                                        <p class="d2c_role_lead">An AI-driven employee onboarding system, built in a team of 5.</p>
+                                        <ul class="d2c_role_points">
+                                            <li>Built ETL/ELT pipelines in Python and SQL loading 120,000+ HR records into PostgreSQL on daily incremental loads.</li>
+                                            <li>Trained classical ML models (scikit-learn, XGBoost) for attrition risk scoring and cohort clustering, plus time-series forecasting of onboarding volume.</li>
+                                            <li>Shipped a retrieval-augmented generation (RAG) assistant over 700 internal policy documents from a FAISS vector index, serving 50 HR staff and new starters.</li>
+                                            <li>Deployed the trained models to AWS behind 10 FastAPI endpoints containerised with Docker, ran hypothesis testing and A/B tests on onboarding interventions, and built Power BI dashboards on throughput and data quality.</li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -347,24 +444,21 @@
                                         <i class="fas fa-flask d2c_icon"></i>
                                     </div>
                                     <div>
-                                        <h6>AI Engineer Intern, FPT Vietnam (Sep 2023 - Feb 2024)</h6>
-                                        <p>Designed and implemented a GitHub Actions CI/CD pipeline from scratch, triggered on pull requests and merges to main, running the test suites and linting on every change, then building and tagging Docker images, pushing them to a container registry, and deploying to the target environment under environment-specific secrets and gates. Applied supervised learning algorithms including Linear Regression, Logistic Regression, and Decision Trees on structured datasets, implemented K-Means clustering for unsupervised pattern discovery, developed NLP classification models using word embeddings, and conducted data analysis and visualisation in Google Colab.</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex">
-                                    <div>
-                                        <i class="fas fa-headset d2c_icon"></i>
-                                    </div>
-                                    <div>
-                                        <h6>Passenger Service Agent, OACIS, Sydney Airport (Oct 2025 - Present)</h6>
-                                        <p class="mb-0">Delivering high-standard passenger assistance across Sydney Airport terminals: information desk support, passenger flow management through check-in, security, boarding, and arrivals, and collaboration with airline staff, security, and airport operations teams, building communication, conflict resolution, and stakeholder management skills across diverse passenger groups.</p>
+                                        <h3>AI Engineer Intern, FPT Vietnam (Sep 2023 - Feb 2024)</h3>
+                                        <ul class="d2c_role_points">
+                                            <li>Designed and implemented a GitHub Actions CI/CD pipeline from scratch, triggered on pull requests and merges to main.</li>
+                                            <li>Ran test suites and linting on every change, then built and tagged Docker images, pushed them to a container registry, and deployed under environment-specific secrets and gates.</li>
+                                            <li>Applied supervised learning (Linear Regression, Logistic Regression, Decision Trees) on structured datasets, and K-Means clustering for unsupervised pattern discovery.</li>
+                                            <li>Developed NLP classification models using word embeddings, with data analysis and visualisation in Google Colab.</li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
+                            <p class="d2c_role_aside mb-0"><i class="fas fa-headset"></i> Also working as a Passenger Service Agent at Sydney Airport (OACIS, Oct 2025 - Present), alongside the AI work above.</p>
                         </div>
                         <div class="col-md-12 col-lg-6 d-flex justify-content-center justify-content-lg-end order-0 order-lg-1 mb-4 mb-md-5 mb-lg-0 wow fadeInRight">
                             <div class="d2c_img_wrapper position-relative">
-                                <img src="./assets/images/experience.webp" class="w-100 h-100" alt="Tien Dung Vu" width="589" height="476" loading="lazy" decoding="async">
+                                <img src="./assets/images/experience.webp" class="w-100 h-100" alt="" width="589" height="476" loading="lazy" decoding="async">
                                 <div class="d2c_img_overlay"></div>
                             </div>
                         </div>
@@ -375,113 +469,13 @@
         </div>
 
         <div class="d2c_cta_project_bg">
-            <!-- Achievements Section Start -->
-            <section class="d2c_services_wrapper" id="achievements">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-8 offset-md-0 offset-lg-2 wow fadeInUp">
-                            <h2 class="text-center">Awards and recognition</h2>
-                            <p class="text-center mb-5">Academic honours from UTS and industry certifications in applied AI, earned alongside the work.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 mb-4 wow fadeInDown">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_card_child">
-                                    <div class="d2c_card_child_two">
-                                        <div class="d2c_card_child_three">
-                                            <div class="d2c_icon_wrapper">
-                                                <div class="d2c_service_icon">
-                                                    <i class="fas fa-graduation-cap"></i>
-                                                </div>
-                                            </div>
-                                            <h6>Bachelor of Artificial Intelligence, University of Technology Sydney</h6>
-                                            <p class="mb-0">Graded High Distinction across the degree, covering machine learning, NLP, computer vision, and AI system design.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_card_child">
-                                    <div class="d2c_card_child_two">
-                                        <div class="d2c_card_child_three">
-                                            <div class="d2c_icon_wrapper">
-                                                <div class="d2c_service_icon">
-                                                    <i class="fas fa-award"></i>
-                                                </div>
-                                            </div>
-                                            <h6>Dean's List 2024</h6>
-                                            <p class="mb-0">Faculty of Engineering and Information Technology, UTS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_card_child">
-                                    <div class="d2c_card_child_two">
-                                        <div class="d2c_card_child_three">
-                                            <div class="d2c_icon_wrapper">
-                                                <div class="d2c_service_icon">
-                                                    <i class="fas fa-award"></i>
-                                                </div>
-                                            </div>
-                                            <h6>Dean's List 2025</h6>
-                                            <p class="mb-0">Faculty of Engineering and Information Technology, UTS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_card_child">
-                                    <div class="d2c_card_child_two">
-                                        <div class="d2c_card_child_three">
-                                            <div class="d2c_icon_wrapper">
-                                                <div class="d2c_service_icon">
-                                                    <i class="fas fa-certificate"></i>
-                                                </div>
-                                            </div>
-                                            <h6>AI Fundamentals: Foundations for Understanding AI</h6>
-                                            <p class="mb-0">Issued by IBM, July 2026.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_card_child">
-                                    <div class="d2c_card_child_two">
-                                        <div class="d2c_card_child_three">
-                                            <div class="d2c_icon_wrapper">
-                                                <div class="d2c_service_icon">
-                                                    <i class="fas fa-robot"></i>
-                                                </div>
-                                            </div>
-                                            <h6>AI Agent Builder</h6>
-                                            <p class="mb-0">Issued by Make, July 2026.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Achievements Section End -->
-
             <!-- Project Section Start -->
             <section class="d2c_project_wrapper" id="project">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 wow fadeInUp">
                             <h2 class="text-center">Things I've built</h2>
-                            <p class="text-center">From full-stack AI platforms to research agents and mobile apps. Hover over each project for the details, or find the code on <a href="https://github.com/BillVu05" target="_blank" rel="noopener">GitHub</a>.</p>
+                            <p class="text-center">From full-stack AI platforms to research agents and mobile apps. Open any project for the code, or browse everything on <a href="https://github.com/BillVu05" target="_blank" rel="noopener">GitHub</a>.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -496,7 +490,7 @@
                                                 <div class="d2c_content_wrapper">
                                                     <h3><a href="https://github.com/BillVu05/AeroStrategist-AI" target="_blank" rel="noopener">Pacific Wings Airline Strategy Simulator</a></h3>
                                                     <p>Full-stack airline strategy platform ingesting real BITRE, World Bank, and OurAirports data, surfaced across an 11-page Next.js dashboard.</p>
-                                                    <h4>Python, FastAPI, Next.js, XGBoost, LangGraph, Gemini AI, PostgreSQL, Docker</h4>
+                                                    <p class="d2c_tech_stack">Python, FastAPI, Next.js, XGBoost, LangGraph, Gemini AI, PostgreSQL, Docker</p>
                                                     <ul class="mb-0">
                                                         <li>
                                                             <i class="fas fa-check d2c_icon"></i>
@@ -531,7 +525,7 @@
                                                         <div class="d2c_content_wrapper">
                                                             <h3><a href="https://github.com/BillVu05/Round-1-code" target="_blank" rel="noopener">Research LLM Agent (CLI)</a></h3>
                                                             <p>CLI research agent with a 4-node LangGraph pipeline: GenerateQueries, WebSearch, Reflect, Synthesize.</p>
-                                                            <h4>Python, LangGraph, Gemini, SerpAPI, Docker</h4>
+                                                            <p class="d2c_tech_stack">Python, LangGraph, Gemini, SerpAPI, Docker</p>
                                                             <ul class="mb-0">
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
@@ -564,7 +558,7 @@
                                                         <div class="d2c_content_wrapper">
                                                             <h3><a href="https://www.youtube.com/watch?v=0KKTnTX2qbE" target="_blank" rel="noopener">UFMO: Accessible Game</a></h3>
                                                             <p>Apple Vision Pro game with UTS Human Augmentation Lab making gaming accessible to blind and visually impaired players.</p>
-                                                            <h4>Apple Vision Pro, Echolocation, Custom Gestures, Audio Parameterisation</h4>
+                                                            <p class="d2c_tech_stack">Apple Vision Pro, Echolocation, Custom Gestures, Audio Parameterisation</p>
                                                             <ul class="mb-0">
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
@@ -599,7 +593,7 @@
                                                         <div class="d2c_content_wrapper">
                                                             <h3><a href="https://github.com/BillVu05/Image-Recognition" target="_blank" rel="noopener">Traffic Congestion Analysis</a></h3>
                                                             <p>Turned Transport for NSW live traffic-camera imagery into congestion signals, built in a team of 6 at UTS.</p>
-                                                            <h4>Python, OpenCV, PyTorch, scikit-learn, REST APIs</h4>
+                                                            <p class="d2c_tech_stack">Python, OpenCV, PyTorch, scikit-learn, REST APIs</p>
                                                             <ul class="mb-0">
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
@@ -632,7 +626,7 @@
                                                         <div class="d2c_content_wrapper">
                                                             <h3><a href="https://github.com/BillVu05/ainewssentiment" target="_blank" rel="noopener">Australian Media Sentiment & Framing of AI</a></h3>
                                                             <p>Analysed 1,033 Guardian Australia articles (2017-2026) for UTS / The Sydney Morning Herald.</p>
-                                                            <h4>Python, VADER, RoBERTa, FinBERT, BERTopic, Guardian API</h4>
+                                                            <p class="d2c_tech_stack">Python, VADER, RoBERTa, FinBERT, BERTopic, Guardian API</p>
                                                             <ul class="mb-0">
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
@@ -740,8 +734,6 @@
     <script src="./lib/wow/dist/wow.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Slider JS Link -->
-    <script src="./lib/slick/slick/slick.min.js"></script>
     <!-- Main JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>

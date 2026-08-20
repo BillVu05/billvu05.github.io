@@ -29,7 +29,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow-x: hidden;
+    /* clip, not hidden: `overflow-x: hidden` forces overflow-y to compute as `auto`,
+       which makes <body> a scroll container and stops Bootstrap ScrollSpy firing */
+    overflow-x: clip;
     font-family: var(--primary_font-family);
     /* dark site: a white body flashes through during scroll and image load */
     background-color: var(--primary_bg);
@@ -70,7 +72,7 @@ h2 {
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-h6 {
+h3 {
     color: var(--primary_color);
     font-size: 24px;
     font-weight: 700;
@@ -324,6 +326,11 @@ body .d2c_mobile_view {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Awards now sits directly above Skills, so it needs its own backdrop instead of
+   repeating the services texture twice in a row. Reuses an image already loaded. */
+.d2c_awards_wrapper {
+    background-image: url(../images/cta-project-bg.webp);
+}
 .d2c_counter_choose_bg {
     background: url(../images/counter-choose-bg.webp);
     background-repeat: no-repeat;
@@ -331,11 +338,6 @@ body .d2c_mobile_view {
 }
 .d2c_cta_project_bg {
     background: url(../images/cta-project-bg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.d2c_partner_testimonial_bg {
-    background: url(../images/partner-testimonial-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -353,12 +355,23 @@ h1 span {
     color: var(--secondary_color);
     font-weight: 900;
 }
-.d2c_hero_wrapper h4 {
+.d2c_hero_wrapper .d2c_hero_greeting {
+    color: var(--primary_color);
+    font-size: 30px;
+    font-weight: 500;
     letter-spacing: 6px;
 }
-.d2c_hero_wrapper h5 {
+.d2c_hero_wrapper .d2c_hero_role {
+    color: var(--primary_color);
+    font-size: 24px;
+    font-weight: 500;
     letter-spacing: 5.76px;
     margin-bottom: 20px;
+}
+.d2c_hero_actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 .d2c_hero_wrapper img {
     border-radius: 296.5px 0px 0px 5px;
@@ -372,6 +385,30 @@ h1 span {
 /* Hero Section End */
 
 /* About Section Start */
+/* A degree is education, not an award, so it lives here rather than in the awards row */
+.d2c_education {
+    padding: 20px 24px;
+    border: 1px solid rgba(94, 106, 210, 0.20);
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+}
+.d2c_education h3 {
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.d2c_education h3 i {
+    margin-right: 8px;
+}
+.d2c_education p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.d2c_education strong {
+    color: var(--primary_color);
+    font-weight: 700;
+}
+
 .d2c_about_wrapper img {
     border-radius: 0px 296.5px 0px 0px;
 }
@@ -445,7 +482,7 @@ h1 span {
     justify-content: center;
     align-items: center;
 }
-.d2c_card h6 {
+.d2c_card h3 {
     margin-bottom: 10px;
 }
 /* Service Section End */
@@ -462,12 +499,24 @@ h1 span {
     background-repeat: no-repeat;
     padding: 80px 100px;
 }
-.d2c_counter_wrapper h1 span {
+.d2c_counter_wrapper .d2c_count_value {
+    color: var(--primary_color);
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.d2c_counter_wrapper .d2c_count_value span {
     color: var(--primary_color);
     font-weight: 700;
 }
-.d2c_counter_wrapper h6 {
+.d2c_counter_wrapper .d2c_count_label {
     color: var(--secondary_color);
+    /* labels carry a full phrase now, not two words */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+    text-transform: none;
 }
 /* Counter Section End */
 
@@ -485,7 +534,7 @@ h1 span {
     font-size: 16px;
     color: var(--text_color);
 }
-.d2c_choose_me_wrapper h6 {
+.d2c_choose_me_wrapper h3 {
     color: var(--secondary_color);
     font-size: 18px;
     font-weight: 500;
@@ -498,6 +547,45 @@ h1 span {
 }
 .d2c_choose_me_wrapper li {
     margin: 7px 0px;
+}
+/* Each role is now scannable bullets instead of one 90-word paragraph */
+.d2c_choose_me_wrapper .d2c_role_lead {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+.d2c_choose_me_wrapper .d2c_role_points {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.d2c_choose_me_wrapper .d2c_role_points li {
+    position: relative;
+    margin: 0 0 8px 0;
+    padding-left: 18px;
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.55;
+}
+.d2c_choose_me_wrapper .d2c_role_points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--secondary_color);
+}
+.d2c_choose_me_wrapper .d2c_role_aside {
+    font-size: 16px;
+    padding: 14px 18px;
+    border-left: 2px solid var(--secondary_color);
+    background: rgba(94, 106, 210, 0.08);
+}
+.d2c_choose_me_wrapper .d2c_role_aside i {
+    color: var(--secondary_color);
+    margin-right: 8px;
 }
 /* Why Choose Me Section End */
 
@@ -610,7 +698,7 @@ h1 span {
     font-weight: 400;
     margin-bottom: 26px;
 }
-.d2c_project_wrapper h4 {
+.d2c_project_wrapper .d2c_card_child_three .d2c_tech_stack {
     color: var(--default_color);
     font-size: 16px;
     font-weight: 700;
@@ -633,67 +721,9 @@ h1 span {
 /* Project Section End */
 
 /* Partner Section Start */
-.d2c_partner_box {
-    background-image: url(../images/d2c-box-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 70px 80px 60px;
-}
-.d2c_partner_box img {
-    margin: 0 auto;
-}
-.slick-slide {
-    padding: 0px 12px;
-}
 /* Partner Section End */
 
 /* Testimonial Section Start */
-.d2c_testimonial_wrapper h2 {
-    margin-bottom: 60px;
-}
-.d2c_testimonial_wrapper h4 {
-    color: var(--text_color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: capitalize;
-    margin-bottom: 40px;
-}
-.d2c_testimonial_wrapper h6 {
-    font-size: 18px;
-    color: var(--secondary_color);
-    margin-bottom: 5px;
-}
-.d2c_testimonial_wrapper p {
-    font-size: 16px;
-    color: var(--text_color);
-}
-.d2c_carousel_left_btn {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    left: -100px;
-}
-.d2c_carousel_right_btn {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    right: -100px;
-}
-.slick-arrow {
-    width: 56px;
-    height: 56px;
-    font-size: 18px;
-    border-radius: 100px;
-    color: var(--primary_color);
-    border: 1px solid #2e3358;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.05) 100%);
-    box-shadow: 0px 5px 20px 5px rgba(94, 106, 210, 0.22);
-    display: inline-flex !important;
-    justify-content: center;
-    align-items: center;
-}
 /* Testimonial Section End */
 
 /* Contact Section Start */

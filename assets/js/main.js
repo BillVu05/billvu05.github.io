@@ -25,99 +25,6 @@ function navClone() {
     }
     navClone();
 
-// Partner Slider
-$('.d2c_partner_slider').slick({
-centerMode: true,
-centerPadding: '0px',
-dots: false,
-arrows: false,
-infinite: true,
-autoplay:true,
-speed: 2000,
-slidesToShow: 6,
-slidesToScroll: 1,
-responsive: [
-    {
-    breakpoint: 1500,
-    settings: {
-        slidesToShow: 5,
-    }
-    },
-    {
-    breakpoint: 992,
-    settings: {
-        slidesToShow: 3,
-    }
-    },
-    {
-    breakpoint: 480,
-    settings: {
-        slidesToShow: 2,
-    }
-    }
-]
-});
-
-// Testimonial Slider
-$('.d2c_testimonial_slider').slick({
-    centerMode: true,
-    centerPadding: '0px',
-    dots: false,
-    arrows: true,
-    infinite: true,
-    autoplay:true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: '<button type="button" class="d2c_carousel_left_btn" aria-label="carousel-control"><i class="fas fa-arrow-left"></i></button>',
-    nextArrow: '<button type="button" class="d2c_carousel_right_btn" aria-label="carousel-control"><i class="fas fa-arrow-right"></i></button>',
-    responsive: [
-        {
-        breakpoint: 1400,
-        settings: {
-            slidesToShow: 1,
-        }
-        },
-        {
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 1,
-        }
-        },
-        {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 1,
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-        }
-        }
-    ]
-});
-
-// Form Validation Js
-(function () {
-    'use strict'
-  
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-    })
-})();
-
 // WOW JS
     new WOW().init();
 
@@ -140,30 +47,44 @@ window.onscroll = function() { scrollFunction() };
 }
 
 // Counter
-$(document).ready(function() {
+// Counts up when the row actually scrolls into view, and stops when it lands.
+// The old version started four setIntervals on page load and never cleared them.
+(function () {
+    var counters = document.querySelectorAll('.count');
+    if (!counters.length) return;
 
-    var counters = $(".count");
-    var countersQuantity = counters.length;
-    var counter = [];
-  
-    for (i = 0; i < countersQuantity; i++) {
-      counter[i] = parseInt(counters[i].innerHTML);
-    }
-  
-    var count = function(start, value, id) {
-      var localStart = start;
-      setInterval(function() {
-        if (localStart < value) {
-          localStart++;
-          counters[id].innerHTML = localStart;
+    // Frame-based so the run always takes ~1.2s of wall clock, whatever the tick rate.
+    // A fixed-step setInterval stretches to many seconds when the tab is throttled.
+    var DURATION = 1200;
+
+    function animate(el) {
+        var target = parseInt(el.dataset.count, 10);
+        if (isNaN(target)) return;
+        var start = null;
+        function frame(now) {
+            if (start === null) start = now;
+            var progress = Math.min(1, (now - start) / DURATION);
+            el.textContent = Math.round(target * progress).toLocaleString('en-AU');
+            if (progress < 1) requestAnimationFrame(frame);
         }
-      }, 40);
+        requestAnimationFrame(frame);
     }
-  
-    for (j = 0; j < countersQuantity; j++) {
-      count(0, counter[j], j);
+
+    if (!('IntersectionObserver' in window)) {
+        counters.forEach(animate);
+        return;
     }
-  });
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            observer.unobserve(entry.target);
+            animate(entry.target);
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(function (el) { observer.observe(el); });
+})();
 
 
 
