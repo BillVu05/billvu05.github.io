@@ -16,6 +16,11 @@
     --link_color: #8F99E8;
     /* BG */
     --primary_bg: #0D111A;
+    /* Spacing scale. Fluid, so the rhythm scales with the viewport instead of
+       stepping at each breakpoint. One source of truth for every section. */
+    --space-section: clamp(48px, 6vw, 88px);
+    --space-intro: clamp(32px, 3vw, 44px);
+    --space-lead: 24px;
 }
 
 /* selection */
@@ -37,7 +42,7 @@ body {
     background-color: var(--primary_bg);
 }
 section {
-    padding: 100px 0px;
+    padding: var(--space-section) 0px;
 }
 a {
     text-decoration: none;
@@ -415,8 +420,13 @@ h1 span {
 .d2c_about_wrapper .d2c_img_overlay {
     border-radius: 0px 296.5px 0px 0px;
 }
-.d2c_about_wrapper p {
-    margin-bottom: 30px;
+/* One rule for the sentence under a centred section heading, and one for the
+   lead paragraph in the two-column sections. Previously 24, 30, 48, 48 and 65px. */
+.d2c_section_intro {
+    margin-bottom: var(--space-intro);
+}
+.d2c_section_lead {
+    margin-bottom: var(--space-lead);
 }
 .d2c_about_wrapper ul {
     list-style-type: none;
@@ -497,14 +507,16 @@ h1 span {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 80px 100px;
+    /* was 80px/100px, which left ~160px of empty box below the figures and
+       squeezed each column to 280px. Less padding, wider columns, no dead space. */
+    padding: clamp(36px, 3.6vw, 52px) clamp(20px, 3vw, 44px);
 }
 .d2c_counter_wrapper .d2c_count_value {
     color: var(--primary_color);
-    font-size: 46px;
+    font-size: clamp(28px, 3.8vw, 56px);
     font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 10px;
+    line-height: 1.15;
+    margin-bottom: 12px;
 }
 .d2c_counter_wrapper .d2c_count_value span {
     color: var(--primary_color);
@@ -512,11 +524,16 @@ h1 span {
 }
 .d2c_counter_wrapper .d2c_count_label {
     color: var(--secondary_color);
-    /* labels carry a full phrase now, not two words */
-    font-size: 15px;
+    /* labels carry a full phrase, so they sit just under body size rather than
+       at caption size. Fluid, so there are no steps between breakpoints. */
+    font-size: clamp(14px, 1.25vw, 18px);
     font-weight: 500;
     line-height: 1.45;
     text-transform: none;
+    /* keeps a 2-line label from stretching the full column width */
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Counter Section End */
 
@@ -609,9 +626,6 @@ h1 span {
 /* Project Section Start */
 .d2c_project_wrapper h2 {
     margin-bottom: 20px;
-}
-.d2c_project_wrapper p {
-    margin-bottom: 65px;
 }
 .d2c_project_wrapper .d2c_large_img {
     height: 700px;
@@ -761,7 +775,7 @@ textarea {
     background: url(../images/group.webp), url(../images/footer-bg.webp), var(--primary_bg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0px;
+    padding: var(--space-section) 0px;
     border-top: 1px solid #34396679;
 }
 .d2c_footer_card {
@@ -770,23 +784,15 @@ textarea {
     border: 1px solid rgba(94, 106, 210, 0.20);
     background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
 }
-.d2c_footer_card img {
-    margin-bottom: 18px;
-}
-.d2c_footer_card h2 {
-    color: var(--secondary_color);
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-.d2c_footer_card h2 + p {
-    margin-bottom: 24px;
-}
+/* Three peer columns: same size, same margin, whatever the heading level.
+   The levels stay h2 then h3 so the outline is still correct. */
+.d2c_footer_card h2,
 .d2c_footer_card h3 {
     color: var(--secondary_color);
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-bottom: 42px;
+    margin-bottom: 20px;
 }
 .d2c_footer_card ul {
     list-style-type: none;
