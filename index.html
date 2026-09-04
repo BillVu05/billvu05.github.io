@@ -146,7 +146,7 @@
                     </div>
                     <div class="col-md-12 col-lg-6 wow fadeInRight">
                         <h2>Engineering AI systems end-to-end</h2>
-                        <p class="d2c_section_lead">A driven AI Engineer and Analyst who operates at the full depth of intelligent systems. My expertise spans machine learning that extracts signal from noise, NLP systems that make sense of human language, computer vision pipelines that interpret the visual world, and LLM agents that reason and act with autonomy, all trained, evaluated, and deployed to AWS behind FastAPI endpoints. I hold LLM systems to the same bar as any other software: offline eval harnesses over golden sets, groundedness and citation-validity metrics, abstention and false-premise testing, prompt-injection hardening, and graceful degradation when a model or API fails. Backed by a strong foundation in Python, SQL, CI/CD, and AI system design, plus the analytics side of the job (ETL/ELT into PostgreSQL, A/B and hypothesis testing, Power BI and Looker Studio reporting), I build for production, not just proof of concept.</p>
+                        <p class="d2c_section_lead">A driven AI Engineer and Analyst who operates at the full depth of intelligent systems. My expertise spans machine learning that extracts signal from noise, NLP systems that make sense of human language, computer vision pipelines that interpret the visual world, and LLM agents that reason and act with autonomy, all trained, evaluated, and deployed to AWS behind FastAPI endpoints. Backed by a strong foundation in Python, SQL, CI/CD, and AI system design, plus the analytics side of the job (ETL/ELT into PostgreSQL, A/B and hypothesis testing, Power BI and Looker Studio reporting), I build for production, not just proof of concept.</p>
                         <ul>
                             <li>
                                 <i class="fas fa-check d2c_icon"></i>
@@ -240,11 +240,11 @@
                                     <div class="d2c_card_child_three">
                                         <div class="d2c_icon_wrapper">
                                             <div class="d2c_service_icon">
-                                                <i class="fas fa-robot"></i>
+                                                <i class="fas fa-layer-group"></i>
                                             </div>
                                         </div>
-                                        <h3>AI Agent Builder</h3>
-                                        <p class="mb-0">Issued by Make, July 2026.</p>
+                                        <h3>RAG for Enhanced AI Outputs</h3>
+                                        <p class="mb-0">Issued by IBM, September 2026.</p>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +344,7 @@
                                             </div>
                                         </div>
                                         <h3>Data & Analytics</h3>
-                                        <p class="mb-0">Power BI and Looker Studio dashboards over GA4, Search Console, Merchant Center, and Shopify data, automated weekly stakeholder reporting, ETL/ELT pipelines into PostgreSQL, and A/B and hypothesis testing that turn raw metrics into decisions.</p>
+                                        <p class="mb-0">Power BI and Looker Studio dashboards over GA4, Search Console, Merchant Center, and Shopify data, advanced Excel modelling with Power Query, pivot tables and Solver, ETL/ELT pipelines into PostgreSQL, and A/B and hypothesis testing that turn raw metrics into decisions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -420,6 +420,7 @@
                                             <li>Built 4 end-to-end content automation pipelines with Claude Code and n8n: SEO blog expander, video-to-content-pack, blog-to-social repurposing, and ad copy refresh.</li>
                                             <li>Analysed campaign and store performance across GA4, Google Search Console, Google Merchant Center, and Shopify, building Looker Studio reports that fed back into SEO and paid campaign optimisation.</li>
                                             <li>Developed a Google Ads copy generator producing 15+ Claude-generated variants, plus an email subject-line A/B testing pipeline.</li>
+                                            <li>Built advanced Excel reporting models over campaign and store performance: Power Query ingestion, pivot tables, INDEX/MATCH and XLOOKUP across joined data sets, and what-if scenario tables and Solver for budget optimisation.</li>
                                             <li>Built a HubSpot data-entry automation processing 500+ contact records and cutting data-formatting error rates by 50%, and authored an AI automation playbook for team handover.</li>
                                         </ul>
                                     </div>
@@ -516,28 +517,28 @@
                             <div class="row mb-4">
                                 <div class="col-md-6 col-lg-6 col-xl-7 mb-4 mb-md-0 wow fadeInDown">
                                     <div class="d2c_img_wrapper d2c_small_img position-relative w-100">
-                                        <img src="./assets/images/portfolio-two.webp" class="w-100 h-100" alt="Research LLM Agent" width="1264" height="848" loading="lazy" decoding="async">
+                                        <img src="./assets/images/portfolio-two.webp" class="w-100 h-100" alt="LLM Research Agent" width="1264" height="848" loading="lazy" decoding="async">
                                         <div class="d2c_overlay"></div>
                                         <div class="d2c_card">
                                             <div class="d2c_card_child h-100">
                                                 <div class="d2c_card_child_two h-100">
                                                     <div class="d2c_card_child_three">
                                                         <div class="d2c_content_wrapper">
-                                                            <h3><a href="https://github.com/BillVu05/llm-research-agent" target="_blank" rel="noopener">Research LLM Agent (CLI)</a></h3>
-                                                            <p>CLI research agent turning a question into a cited JSON answer, over a 4-node LangGraph state graph with a bounded reflection loop.</p>
-                                                            <p class="d2c_tech_stack">Python, LangGraph, Gemini, SerpAPI, Pytest, Ruff, GitHub Actions, Docker</p>
+                                                            <h3><a href="https://github.com/BillVu05/llm-research-agent" target="_blank" rel="noopener">LLM Research Agent (CLI)</a></h3>
+                                                            <p>CLI research agent turning a question into a cited JSON answer, over a 6-node LangGraph state graph with real RAG retrieval and a bounded reflection loop.</p>
+                                                            <p class="d2c_tech_stack">Python, LangGraph, Gemini, NumPy, SerpAPI, Pytest, Ruff, GitHub Actions, Docker</p>
                                                             <ul class="mb-0">
+                                                                <li>
+                                                                    <i class="fas fa-check d2c_icon"></i>
+                                                                    Page fetch, chunk, embed, MMR retrieval
+                                                                </li>
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
                                                                     25-question golden set, graded on abstention
                                                                 </li>
                                                                 <li>
                                                                     <i class="fas fa-check d2c_icon"></i>
-                                                                    Citations rebuilt from retrieved docs
-                                                                </li>
-                                                                <li>
-                                                                    <i class="fas fa-check d2c_icon"></i>
-                                                                    52 Pytest tests, prompt-injection fencing
+                                                                    87 Pytest tests, prompt-injection fencing
                                                                 </li>
                                                             </ul>
                                                         </div>

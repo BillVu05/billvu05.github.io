@@ -494,6 +494,8 @@ h1 span {
 }
 .d2c_card h3 {
     margin-bottom: 10px;
+    /* ponytail: long hyphenated words (Retrieval-Augmented) overflow the narrow award cards */
+    overflow-wrap: break-word;
 }
 /* Service Section End */
 
