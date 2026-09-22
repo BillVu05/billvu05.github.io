@@ -664,9 +664,11 @@ h1 span {
     .d2c_project_wrapper .d2c_large_img {
         height: auto;
     }
+    /* These previews are screenshots with text in them: a 16/10 crop sliced the
+       headlines off. Natural ratio shows the whole thing. */
     .d2c_project_wrapper .d2c_img_wrapper img {
         height: auto;
-        aspect-ratio: 16 / 10;
+        object-fit: contain;
     }
     .d2c_project_wrapper .d2c_overlay {
         display: none;
@@ -723,11 +725,14 @@ h1 span {
 .d2c_project_wrapper ul {
     padding-left: 0;
 }
+/* Flex, not inline: a wrapped bullet used to slide back under its own tick. */
 .d2c_project_wrapper ul li {
+    display: flex;
     padding: 7px 0px;
     color: var(--color_two);
 }
 .d2c_project_wrapper .d2c_icon {
+    flex: 0 0 24px;
     width: 24px;
     height: 24px;
     color: var(--default_color);

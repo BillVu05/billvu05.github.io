@@ -140,8 +140,10 @@
     }
     /* Call To Action Start */
     /* Project Start */
-    .d2c_project_wrapper .d2c_large_img {
-        height: 400px;
+    @media (hover: hover) {
+        .d2c_project_wrapper .d2c_large_img {
+            height: 400px;
+        }
     }
     .d2c_project_wrapper h3 {
         font-size: 20px;
@@ -201,6 +203,44 @@
         display: none;
     }
     /* Copy Right End */
+
+    /* Phone Refinements Start */
+    /* A 106px logo made the sticky header 133px: a sixth of the screen, on every
+       scroll. 60px keeps the mark readable and hands the space back to content. */
+    .navbar-brand {
+        max-width: 60px;
+    }
+    section[id],
+    footer[id] {
+        scroll-margin-top: 88px;
+    }
+    /* Tap targets: thumbs need ~44px, these were 36-40px. */
+    .navbar-toggler {
+        height: 44px;
+    }
+    .d2c_navbar .navbar-nav .nav-link {
+        padding: 11px 27px 10px;
+    }
+    .btn {
+        padding: 12px 26px 11px;
+    }
+    .d2c_footer_card ul li a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    .d2c_project_wrapper h3 a {
+        display: inline-block;
+        padding: 11px 0;
+    }
+    /* Centred copy is fine for a heading, tiring for six wrapped lines on a
+       narrow screen. Left-align the body text, keep the headings centred. */
+    .d2c_section_intro,
+    .d2c_services_wrapper .d2c_card p {
+        /* beats Bootstrap's .text-center, which ships !important */
+        text-align: left !important;
+    }
+    /* Phone Refinements End */
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -332,8 +372,10 @@
     }
     /* Call To Action Start */
     /* Project Start */
-    .d2c_project_wrapper .d2c_large_img {
-        height: 400px;
+    @media (hover: hover) {
+        .d2c_project_wrapper .d2c_large_img {
+            height: 400px;
+        }
     }
     .d2c_project_wrapper h3 {
         font-size: 20px;
